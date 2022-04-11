@@ -11,7 +11,7 @@ class AnimatedCrossFadeWidget extends StatefulWidget {
 
 class _AnimatedCrossFadeWidgetState extends State<AnimatedCrossFadeWidget> {
   bool val = true;
-  void picChange() {
+  void _picChange() {
     setState(() {
       val = !val;
     });
@@ -39,7 +39,7 @@ class _AnimatedCrossFadeWidgetState extends State<AnimatedCrossFadeWidget> {
                   duration: const Duration(seconds: 2))),
     ),
     ElevatedButton(
-      onPressed: picChange,
+      onPressed: _picChange,
       child: const Text('Click to Change Pic')
       )
           ],
